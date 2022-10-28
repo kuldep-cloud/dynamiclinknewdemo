@@ -21,20 +21,19 @@ samples, guidance on mobile development, and a full API reference.
 
 Firebase config
 
-Firebase Dynamic Links provides a rich feature for handling deep linking for applications and websites.
-The best part is that Firebase deep linking is free, for any scale.
-Dynamic Links instead of redirecting the user to the playstore bring-in Optimal User Experience by also navigating him to the Intended Equivalvent content in web/app apparently contributing to building ,improving and growing application for multiple platform domains.
+    Firebase Dynamic Links provides a rich feature for handling deep linking for applications and websites.
+    The best part is that Firebase deep linking is free, for any scale.
+    Dynamic Links instead of redirecting the user to the playstore bring-in Optimal User Experience by also navigating him to the Intended Equivalvent content in web/app apparently contributing to building ,improving and growing application for multiple platform domains.
 
 
 
 Setup & Initial Configuration
-In order to send Firebase Dynamic Links, We need to create a firebase project for the Firebase Dynamic Links from firebase.google.com by logging in with your Google account
 
-Click on Add Project Button (+) initiating firebase project creation process.
+      In order to send Firebase Dynamic Links, We need to create a firebase project for the Firebase Dynamic Links from firebase.google.com by logging in with your Google account
 
-Select the appropriate name for the project entering continue further
-
-You can either select the firebase analytics and then clicking on Continue Project. Firebase Project is now created and ready to use .
+     1.Click on Add Project Button (+) initiating firebase project creation process.
+     2.Select the appropriate name for the project entering continue further
+     3.You can either select the firebase analytics and then clicking on Continue Project. Firebase Project is now created and ready to use .
 
 This Progress indicator will show before the dashboard indicating success.
 
@@ -43,14 +42,15 @@ In the project overview page, click the android  icon to launch the setup workfl
 
 Integration with android App
 
-In the project overview page, select the android icon to launch the setup flow. If you have already added the app to your project provide click on add app to provide details of your application.
+    In the project overview page, select the android icon to launch the setup flow. If you have already added the app to your project provide click on add app to provide details of your application.
 
 
 Register your app with Firebase :
-a. Provide with your app package name ex(com.example.app).
-Find this package name from your open project in android folder. Select the top-level app in the project navigator, then access src>main>AndroidManifest.xml. package  name  package="com.example.dynamiclinknewdemo
-b. You may also provide optional details like App Nick Name and Sha key.
-c. Register your app.
+
+        a. Provide with your app package name ex(com.example.app).
+           Find this package name from your open project in android folder. Select the top-level app in the project navigator, then access src>main>AndroidManifest.xml. package  name  package="com.example.dynamiclinknewdemo
+        b. You may also provide optional details like App Nick Name and Sha key.
+        c. Register your app.
 
 
 Make sure you enter the package name As this can’t be edited further at the moment .
@@ -60,25 +60,26 @@ Next step, We need to download the config file named Google-service.json file  &
 
 After that copy that downloaded folder to your:
 
-Your app name > android > app
+      Your app name > android > app
 
 After successfully adding google-services.json file to your app folder, you need to add Firebase SDK to the build.gradle folder.
 
 Now we have successfully initial configuration and adding Firebase to our existing project. Then we will move on to the next step.
 
 Setting up Firebase
-1. On the right side of the Firebase console, select “Dynamic Links” after redirecting to your firebase flutter dynamic link project. Then click “Get started”.
-2. Selecting a domain under the given modal “Add URL prefix”. Here they will provide automatically some domains. If you need to customize it you can enter the domain you preferred. Then click “Continue” button.
+
+       1. On the right side of the Firebase console, select “Dynamic Links” after redirecting to your firebase flutter dynamic link project. Then click “Get started”.
+       2. Selecting a domain under the given modal “Add URL prefix”. Here they will provide automatically some domains. If you need to customize it you can enter the domain you preferred. Then click “Continue” button.
 
 Create a dynamic link inside the Firebase Console
 
-1. Click “New Dynamic Link”. 
-2. Set up a short URL link and click “Next”.
-3. Then you need to set up your dynamic link URL, under “Set up your Dynamic Link”. There is a deep link to your application and if a specific user has not installed the app where that user should redirect. As an example, you can provide app play store link as the dynamic link. Link name can be given as any meaningful short name about your dynamic link that you prefer. Click “Next”.
-4. Choose “Open the deep link URL in a browser” option. In that option, if the specific app is not installed in your app the link will open through the browser. If not you can choose “Open the deep link in your iOS App” but if so you need to have an iOS app. Then click “Next”.
-5. Here we define behavior for Android. Select “Open the deep link in your Android App” and choose your android app. Then click “Next”.
-6. Additionally, you can customize some advanced options. Then click “Create”.
-7. Under the URL, you will get your created dynamic link.
+      1. Click “New Dynamic Link”. 
+      2. Set up a short URL link and click “Next”.
+      3. Then you need to set up your dynamic link URL, under “Set up your Dynamic Link”. There is a deep link to your application and if a specific user has not installed the app where that user should redirect. As an example, you can provide app play store link as the dynamic link. Link name can be given as any meaningful short name about your dynamic link that you prefer. Click “Next”.
+      4. Choose “Open the deep link URL in a browser” option. In that option, if the specific app is not installed in your app the link will open through the browser. If not you can choose “Open the deep link in your iOS App” but if so you need to have an iOS app. Then click “Next”.
+      5. Here we define behavior for Android. Select “Open the deep link in your Android App” and choose your android app. Then click “Next”.
+      6. Additionally, you can customize some advanced options. Then click “Create”.
+      7. Under the URL, you will get your created dynamic link.
 
 Android Config
 
