@@ -154,9 +154,13 @@ split uri for getting data from uri
 logic for getting the particular key data from split variable
 
         final userName,userId;
+       //run a loop till array length
         for (int i = 0; i < allParamsList.length; i++) {
+          //check the condition of key
           if (allParamsList[i].contains("username")) {
+             //set value of index in a variable
             final usernameVariable = allParamsList[i];
+             //split again to get value of key
             userName = usernameVariable.split("username=").last;
           } else if (allParamsList[i].contains("userID")) {
             final usernameVariable = allParamsList[i];
